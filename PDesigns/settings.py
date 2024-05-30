@@ -27,7 +27,7 @@ with open(os.path.join(BASE_DIR,'secret_key.txt')) as f:
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://app.netlify.com']
+ALLOWED_HOSTS = ['https://app.netlify.com',"phoenixdesigns.netlify.app"]
 
 
 # Application definition
