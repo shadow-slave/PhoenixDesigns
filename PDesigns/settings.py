@@ -29,7 +29,7 @@ with open(os.path.join(BASE_DIR,'secret_key.txt')) as f:
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*"]
+ALLOWED_HOSTS = ['.vercel.app']
 
 
 # Application definition
@@ -144,8 +144,3 @@ SECURE_SSL_REDIRECT=True
 SECURE_HSTS_SECONDS= 31536000 #1YEAR
 SECURE_HSTS_PRELOAD= True
 SECURE_HSTS_INCLUDE_SUBDOMAINS= True
-<<<<<<< HEAD
-
-django_heroku.settings(locals())
-=======
->>>>>>> 4a0fcd75fedaf3a0334f4a5b8149d2723ae06dd4
