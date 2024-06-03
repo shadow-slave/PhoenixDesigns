@@ -17,7 +17,7 @@ django==5.0.1
     #   django-heroku
 django-heroku==0.3.1
     # via -r requirements.in
-psycopg2-binary==2.9.9
+# psycopg2-binary==2.9.9
     # via django-heroku
 sqlparse==0.5.0
     # via django
