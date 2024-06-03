@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 from pathlib import Path
 import os
+import django_heroku
+import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -27,7 +29,7 @@ with open(os.path.join(BASE_DIR,'secret_key.txt')) as f:
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://app.netlify.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -127,6 +129,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 MEDIA_URL = '/media/'
 MEDIA_ROOT=os.path.join(BASE_DIR,'media')
 
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
@@ -141,3 +144,5 @@ SECURE_SSL_REDIRECT=True
 SECURE_HSTS_SECONDS= 31536000 #1YEAR
 SECURE_HSTS_PRELOAD= True
 SECURE_HSTS_INCLUDE_SUBDOMAINS= True
+
+django_heroku.settings(locals())
