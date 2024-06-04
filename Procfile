@@ -1,1 +1,1 @@
-web gunicorn PDesigns.wsgi:application --log-file -
+web: gunicorn PDesigns.wsgi

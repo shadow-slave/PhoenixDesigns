@@ -29,7 +29,8 @@ with open(os.path.join(BASE_DIR,'secret_key.txt')) as f:
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['.vercel.app','localhost','.ngrok-free.app','phoenixdesigns.ap-south-1.elasticbeanstalk.com']
+ALLOWED_HOSTS = ['*']
+# ALLOWED_HOSTS = ['.vercel.app','localhost','.ngrok-free.app','phoenixdesigns.ap-south-1.elasticbeanstalk.com']
 
 
 # Application definition
@@ -53,6 +54,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
+    'django.middleware.security.SecurityMiddleware',
 ]
 
 ROOT_URLCONF = 'PDesigns.urls'
@@ -126,10 +128,15 @@ STATIC_URL = 'static/'
 # STATICFILES_DIRS = [
 #     os.path.join(BASE_DIR,'PDesigns','User_App','static'),
 # ]
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static")
+]
+
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 MEDIA_URL = '/media/'
 MEDIA_ROOT=os.path.join(BASE_DIR,'media')
 
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage' 
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
