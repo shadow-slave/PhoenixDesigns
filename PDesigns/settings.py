@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-w9-t3#=gkz045n$ehbkox53+40hwdv&d$e6&hl^hlxl7prw!i3
 # with open(os.path.join(BASE_DIR,'secret_key.txt')) as f:
 #     SECRET_KEY= f.read().strip()
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 # ALLOWED_HOSTS = ['.vercel.app','localhost','.ngrok-free.app','phoenixdesigns.ap-south-1.elasticbeanstalk.com']
@@ -143,12 +143,12 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-#HTTPS Settings
-SESSION_COOKIE_SECURE= True
-CSRF_COOKIE_SECURE=True
-SECURE_SSL_REDIRECT=True
+# #HTTPS Settings
+# SESSION_COOKIE_SECURE= True
+# CSRF_COOKIE_SECURE=True
+# SECURE_SSL_REDIRECT=True
 
-# #HSTS settings
-SECURE_HSTS_SECONDS= 31536000 #1YEAR
-SECURE_HSTS_PRELOAD= True
-SECURE_HSTS_INCLUDE_SUBDOMAINS= True
+# # #HSTS settings
+# SECURE_HSTS_SECONDS= 31536000 #1YEAR
+# SECURE_HSTS_PRELOAD= True
+# SECURE_HSTS_INCLUDE_SUBDOMAINS= True

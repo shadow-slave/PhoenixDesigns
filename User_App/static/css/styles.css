@@ -1332,7 +1332,7 @@ body {
     font-size   : var(--base-font-size);
     font-weight : 400;
     line-height : var(--vspace-1);
-    color       : var(--color-text);
+    color: #ffffff;
 }
 
 /* links
