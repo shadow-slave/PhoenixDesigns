@@ -53,7 +53,7 @@
 
                 <div class="s-header__block">
                     <div class="s-header__logo">
-                        <a class="logo" href="index.html">
+                        <a class="logo" href="{% url 'indexview' %}">
                             <img src="{% static 'images/PD.svg' %}" style="border-radius: 50%;" alt="Homepage">
                         </a>
                     </div>
@@ -539,9 +539,11 @@
                         <!-- <a href="https://www.behance.net/" class="modal-popup__details">Project link</a> -->
                     </div>
                 </div> <!-- end modal -->
-                <div id="bricks" class="row bricks">
+                <div id="gallery-bricks" class="row bricks">
                     <div class="column lg-12 masonry">
+                        <div class="goto-gallery">
                     <a href="{% url 'galleryview' %}" class="btn btn--stroke s-intro__content-btn " >More Of Our Works</a>
+                </div>
                     </div>
                 </div>
 
@@ -560,12 +562,22 @@
 
                             <div class="column clients-list__item">
                                 <a href="#0">
-                                    <img src="{% static 'images/clients/SAMARPAN.svg' %}" alt="">
+                                    <img src="" alt="">
                                 </a>
                             </div>
                             <div class="column clients-list__item">
                                 <a href="#0">
                                     <img src="{% static 'images/clients/SRU.svg' %}" alt="">
+                                </a>
+                            </div>
+                            <div class="column clients-list__item">
+                                <a href="#0">
+                                    <img src="{% static 'images/clients/SAMARPAN.svg' %}" alt="">
+                                </a>
+                            </div>
+                            <div class="column clients-list__item">
+                                <a href="#0">
+                                    <img src="" alt="">
                                 </a>
                             </div>
                             <!-- <div class="column clients-list__item">
@@ -607,7 +619,7 @@
 
             <!-- testimonials
             ----------------------------------------------- -->
-            <section id="testimonials" class="s-testimonials">
+            <!-- <section id="testimonials" class="s-testimonials">
 
                 <div class="row s-testimonials__content">
                     <div class="column lg-12">
@@ -620,69 +632,38 @@
                                     <div class="s-testimonials__author">
                                         <img src="{% static 'images/avatars/mpp.jpg' %}" alt="Author image" class="s-testimonials__avatar">
                                         <cite class="s-testimonials__cite">
-                                            <strong>Ganesh Hegde</strong>
-                                            <!-- <span>Event Coordinator at Celebrations Unlimited</span> -->
+                                            <strong>Shadow Gaming</strong>
+                                             <span></span>
                                         </cite>
                                     </div>
                                     <p>
-                                        We engaged Phoenix Designs for our event's promotional materials, and they exceeded our expectations. The posters and invitations were visually stunning and perfectly captured the essence of our event. Highly recommended!
-                                    </p>
+                                        I had an amazing time collaborating with the designer. They went above and beyond to make sure every thing was ideal, from creating an enticing logo to creating visually striking print materials. They really stand out for their creativity, expertise, and meticulous attention to detail. Anyone searching for excellent graphic design services should definitely check out Phoenix Designs. I appreciate your assistance in enhancing my brand and leaving a lasting impact!
                                 </div> <!-- end s-testimonials__slide -->
 
-                                <div class="s-testimonials__slide swiper-slide">
-                                    <div class="s-testimonials__author">
-                                        <img src="{% static 'images/avatars/wpp.jpg' %}" alt="Author image" class="s-testimonials__avatar">
-                                        <cite class="s-testimonials__cite">
-                                            <strong>Anjali Verma</strong>
-                                            <!-- <span>Marketing Manager at GreenEarth Corp</span> -->
-                                        </cite>
-                                    </div>
-                                    <p>
-                                        Working with Phoenix Designs has been transformative for our marketing campaigns.
-                                        Their billboard designs are not only eye-catching but also effectively convey our brand message. Very professional, reliable, and incredibly talented.
-                                    </p>
-                                </div> <!-- end s-testimonials__slide -->
-
-                                <div class="s-testimonials__slide swiper-slide">
-                                    <div class="s-testimonials__author">
-                                        <img src="{% static 'images/avatars/wpp.jpg' %}" alt="Author image" class="s-testimonials__avatar">
-                                        <cite class="s-testimonials__cite">
-                                            <strong>Divya Menon</strong>
-                                            <!-- <span> Marketing Head at EcoWorld Solutions, Bengaluru</span> -->
-                                        </cite>
-                                    </div>
-                                    <p>
-                                        Collaborating with Phoenix Designs has significantly boosted our marketing efforts. Their billboard designs are striking and
-                                        convey our brand message effectively. The team is professional, reliable, and extremely talented.
-                                    </p>
-                                </div> <!-- end s-testimonials__slide -->
-
-                                <div class="s-testimonials__slide swiper-slide">
+                                <!-- <div class="s-testimonials__slide swiper-slide">
                                     <div class="s-testimonials__author">
                                         <img src="{% static 'images/avatars/mpp.jpg' %}" alt="Author image" class="s-testimonials__avatar">
                                         <cite class="s-testimonials__cite">
-                                            <strong> Rajesh Nair</strong>
-                                            <!-- <span> CEO of Nair Enterprises</span> -->
+                                            <strong>suneesh peter</strong>
+                                             <span>Civil Engineer</span>
                                         </cite>
                                     </div>
                                     <p>
-                                        Phoenix Designs gave our brand a fresh, modern look with their incredible design skills.
-                                     The new logo and business cards have been praised by our clients. Their creativity and attention to detail are outstanding!
-                                    </p>
+                                        Very impressed with the quality of the design & quick response Highly recommended 👌</p>
                                 </div> <!-- end s-testimonials__slide -->
 
-                            </div> <!-- end swiper-wrapper -->
-
+                            <!-- </div> <!-- end swiper-wrapper -->
+<!-- 
                             <div class="swiper-pagination"></div>
 
                         </div> <!-- end swiper-container -->
 
-                    </div> <!-- end column -->
-                </div> <!-- end s-testimonials__content -->
+                    <!-- </div> <!-- end column -->
+                <!-- </div> <!-- end s-testimonials__content -->
 
-            </section> <!-- end testimonials -->
+            <!-- </section> <!-- end testimonials -->
 
-        </section>  <!-- end content -->
+        <!-- </section>  end content --> --> --> --> --> --> --> -->
 
 
         <!-- # site-footer

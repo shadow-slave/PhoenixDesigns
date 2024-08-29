@@ -3511,8 +3511,12 @@ img.u-pull-left {
     border-color     : white;
     margin-right     : var(--vspace-1);
     margin-bottom    : 0;
-}
 
+}
+.goto-gallery{
+    display: flex;
+    justify-content: center;
+}
 .s-intro__content-video-btn {
     height          : var(--vspace-btn);
     width           : var(--vspace-btn);
@@ -4102,6 +4106,9 @@ img.u-pull-left {
     color            : white;
 }
 
+.to-gallery-btn{
+    align-items: center;
+}
 /* ------------------------------------------------------------------- 
  * responsive:
  * portfolio
