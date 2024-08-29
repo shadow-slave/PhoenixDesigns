@@ -2889,10 +2889,12 @@ img.u-pull-left {
     margin-bottom : var(--vspace-0_25);
 }
 
-.list-block__title {
+.list-block__title p {
     margin-bottom : var(--vspace-0_5);
 }
-
+.list-block__text {
+    color: #000000;
+}
 .show-ctr .list-block__title::before {
     content           : counter(ctr, decimal-leading-zero) ".";
     counter-increment : ctr;
